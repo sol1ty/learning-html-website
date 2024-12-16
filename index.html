@@ -1,0 +1,121 @@
+<!DOCTYPE html> <!-- Показывает браузеру, что ты используешь HTML5 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Кодировка -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Мета тег для адаптивки (других устройств) -->
+    <title>Document</title> <!-- Что пишет в названии вкладки -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="main-container"> <!-- Добавляем оборот в главный контейнер (объяснил зачем в style.css) -->
+            <div class="header-inner"> 
+                <div class="logo-container">
+                    <a href="index.html"> 
+                        <img src="images/Vector.svg" alt="logo" class="header-logo">
+                    </a>
+                </div>
+                <div class="header-menu-container">
+                    <ul class="header-menu">
+                        <li class="header-menu-item"><a href="" class="header-menu-link">Головна</a></li>
+                        <li class="header-menu-item"><a href="" class="header-menu-link">Відгуки</a></li>
+                        <li class="header-menu-item"><a href="" class="header-menu-link">Галерея</a></li>
+                        <li class="header-menu-item"><a href="" class="header-menu-link">Контакти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="hero-block">
+            <img src="images/hero-block-image.jpg" alt="" class="hero-block-image">
+            <div class="hero-overlay"></div>
+            <div class="main-container">
+                <div class="hero-block-container">
+                    <div class="hero-block-inner">
+                        <div>
+                            <h1 class="hero-title font-black">Відпочинок в Греції</h1>
+                        </div>
+                        <div class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo 
+                            suscipit quam id lacinia. Donec semper massa ante, ac molestie eros semper vitae. Nullam sed 
+                            condimentum lorem. Etiam luctus nec justo non pulvinar. Fusce sed arcu mattis, dignissim ligula 
+                            efficitur, mollis quam. Vivamus volutpat nulla eget mollis condimentum. Phasellus convallis vel 
+                            sem vel tincidunt. Nunc efficitur sem nec lacus gravida imperdiet. Pellentesque placerat iaculis 
+                            urna sed pretium
+                        </div>
+                        <div class="hero-btn-container">
+                            <a href="" class="hero-btn">Забронювати</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="main-container">
+            <div class="footer-inner">
+                <div class="contact-container">
+                    <h2 class="contact-title">
+                        Контакти
+                    </h2>
+                    <div class="contacts">
+                        <div class="contact-item">
+                            <a href="" class="contact-item-link">
+                                <div class="icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 4C1.34375 4 0 5.34375 0 7C0 7.94375 0.44375 8.83125 1.2 9.4L14.8 19.6C15.5125 20.1313 16.4875 20.1313 17.2 19.6L30.8 9.4C31.5562 8.83125 32 7.94375 32 7C32 5.34375 30.6562 4 29 4H3ZM0 11V24C0 26.2062 1.79375 28 4 28H28C30.2062 28 32 26.2062 32 24V11L18.4 21.2C16.975 22.2688 15.025 22.2688 13.6 21.2L0 11Z" fill="#111658"/>
+                                    </svg>                                    
+                                </div>
+                                <div class="contact-item-text">
+                                    john.doe@gmail.com
+                                </div>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <a href="" class="contact-item-link">
+                                <div class="icon">
+                                    <svg width="32" height="36" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_122_74)">
+                                        <path d="M16.0071 9.7241C11.4643 9.7241 7.79998 13.262 7.79998 17.6482C7.79998 22.0345 11.4643 25.5724 16.0071 25.5724C20.55 25.5724 24.2143 22.0345 24.2143 17.6482C24.2143 13.262 20.55 9.7241 16.0071 9.7241ZM16.0071 22.8C13.0714 22.8 10.6714 20.4896 10.6714 17.6482C10.6714 14.8069 13.0643 12.4965 16.0071 12.4965C18.95 12.4965 21.3428 14.8069 21.3428 17.6482C21.3428 20.4896 18.9428 22.8 16.0071 22.8ZM26.4643 9.39997C26.4643 10.4276 25.6071 11.2482 24.55 11.2482C23.4857 11.2482 22.6357 10.4207 22.6357 9.39997C22.6357 8.37928 23.4928 7.55169 24.55 7.55169C25.6071 7.55169 26.4643 8.37928 26.4643 9.39997ZM31.9 11.2758C31.7786 8.79997 31.1928 6.60686 29.3143 4.79997C27.4428 2.99307 25.1714 2.42755 22.6071 2.30341C19.9643 2.15859 12.0428 2.15859 9.39999 2.30341C6.84284 2.42066 4.57141 2.98617 2.69284 4.79307C0.814272 6.59997 0.2357 8.79307 0.107129 11.2689C-0.0428711 13.8207 -0.0428711 21.4689 0.107129 24.0207C0.228557 26.4965 0.814272 28.6896 2.69284 30.4965C4.57141 32.3034 6.8357 32.8689 9.39999 32.9931C12.0428 33.1379 19.9643 33.1379 22.6071 32.9931C25.1714 32.8758 27.4428 32.3103 29.3143 30.4965C31.1857 28.6896 31.7714 26.4965 31.9 24.0207C32.05 21.4689 32.05 13.8276 31.9 11.2758ZM28.4857 26.7586C27.9286 28.1103 26.85 29.1517 25.4428 29.6965C23.3357 30.5034 18.3357 30.3172 16.0071 30.3172C13.6786 30.3172 8.67141 30.4965 6.57141 29.6965C5.17141 29.1586 4.09284 28.1172 3.52856 26.7586C2.69284 24.7241 2.8857 19.8965 2.8857 17.6482C2.8857 15.4 2.69999 10.5655 3.52856 8.5379C4.0857 7.18617 5.16427 6.14479 6.57141 5.59997C8.67856 4.79307 13.6786 4.97928 16.0071 4.97928C18.3357 4.97928 23.3428 4.79997 25.4428 5.59997C26.8428 6.1379 27.9214 7.17928 28.4857 8.5379C29.3214 10.5724 29.1286 15.4 29.1286 17.6482C29.1286 19.8965 29.3214 24.731 28.4857 26.7586Z" fill="#111658"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_122_74">
+                                        <rect width="32" height="35.3103" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>                                                                  
+                                </div>
+                                <div class="contact-item-text">
+                                    @greekresort
+                                </div>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <a href="" class="contact-item-link">
+                                <div class="icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_122_83)">
+                                        <path d="M32 16C32 7.1625 24.8375 0 16 0C7.1625 0 0 7.1625 0 16C0 23.5 5.16875 29.8 12.1375 31.5312V20.8875H8.8375V16H12.1375V13.8938C12.1375 8.45 14.6 5.925 19.95 5.925C20.9625 5.925 22.7125 6.125 23.4312 6.325V10.75C23.0562 10.7125 22.4 10.6875 21.5812 10.6875C18.9562 10.6875 17.9438 11.6812 17.9438 14.2625V16H23.1688L22.2687 20.8875H17.9375V31.8813C25.8625 30.925 32 24.1812 32 16Z" fill="#111658"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_122_83">
+                                        <rect width="32" height="32" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>                                                                    
+                                </div>
+                                <div class="contact-item-text">
+                                    @greekresort
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-logo">
+                    <img src="images/Vector.svg" alt="" class="footer-logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

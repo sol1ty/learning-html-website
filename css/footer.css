@@ -1,0 +1,81 @@
+.footer {
+    padding: 28px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.footer-logo {
+    width: 200px;
+    height: 200px;
+    object-fit: contain; /* Ставим заполнение по грани контейнера */
+    margin: auto 0;
+}
+
+.contact-container {
+    width: calc(100% - 118px - 24px); /* Функция кальк 100% отнимаем ширину контейнера с лого и вычитываем ещё ГЭП*/
+}
+
+.contact-title {
+    text-align: center; /* Выравнивание по центру */
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.contact-item-text {
+    margin-left: 12px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column; /* Направление флекса (ряд / колонка) */
+    gap: 16px;
+}
+
+.contact-item-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #111658;
+    font-size: 24px;
+    line-height: 32px;
+    transition: .3s;
+}
+
+.contact-item-link:hover {
+    color: #4B71EC;
+}
+
+.icon {
+    max-width: 32px;
+    max-height: 35px;
+}
+
+@media screen and (max-width: 767px) {
+    .footer-inner {
+        flex-direction: column;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
+
+    .contact-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .contact-item-link {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .footer-logo {
+        width: 100%;
+    }
+}

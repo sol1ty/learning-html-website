@@ -1,0 +1,56 @@
+.header {
+    background-color: #E0E0E0; /* Цвет заднего фона */
+    min-height: 124px;
+}
+
+.header-inner {
+    display: flex; /* Отображение дочерних элементов в ряд */
+    align-items: center; /* Центрирование по вертикали. РАБОТАЕТ ТОЛЬКО С display flex */
+    justify-content: space-between; /* Выравнивание по краям. РАБОТАЕТ ТОЛЬКО С display flex */
+    padding: 16px 0; /* Внутренние отступы по оси Y и по оси X */
+    gap: 16px; /* Одинаковые отступы между всеми элементами. РАБОТАЕТ ТОЛЬКО С display flex */
+}
+
+.header-logo {
+    max-width: 120px; /* Ограничиваем максимально допустимую ширину */
+    max-height: 88px; /* Ограничиваем максимально допустимую высоту */
+    object-fit: contain; /* Ставим заполнение по грани контейнера */
+}
+
+.header-menu {
+    list-style-type: none; /* Убираем точки у немаркированного списка*/
+    display: flex;
+    flex-wrap: wrap; /* Перенос информации когда заканчивается место */
+    gap: 32px; /* Одинаковые отступы между всеми элементами. РАБОТАЕТ ТОЛЬКО С display flex */
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.header-menu-link {
+    color: #111658; /* Задаём цвет текста */
+    text-decoration: none; /* Убираем подчеркивание стандартное для ссылки*/
+}
+
+.header-menu-link:hover { /* Псевдоэлемент ховер используется для обозначения наведения на элемент */
+    color: #4B71EC; 
+    transition: .3s; /* Задаём плавное изменение. Когда стоит .число - значит, что это десятичная дробь - .3s = 0.3s
+    ms - милисекунды, s - секунды */
+}
+
+@media screen and (max-width: 767px) { /* Пишем медиа-запрос для экранов с максимальной шириной 767 пикселей (Телефоны) */
+    .header-inner {
+        gap: 32px;
+    }
+    
+    .header-menu {
+        font-size: 16px; /* Размер шрифта 16 пикселей */
+        line-height: 24px; /* Высота строки 24 пикселя */
+        justify-content: center; /* Центрируем по горизонтали */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header-inner {
+        flex-direction: column; /* Меняем направление на "колонка", то есть вертикально выстраиваем */
+    }
+}

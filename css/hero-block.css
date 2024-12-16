@@ -1,0 +1,101 @@
+.hero-block {
+    position: relative;
+}
+
+.hero-block > .main-container { /* Делаем вложенность (мейн контейнер в хиро блоке), чтобы проявить текст*/
+    position: relative;
+}
+
+.hero-block-image {
+    position: absolute; /* Задаём абсолютную позицию, она не зависит от любых других элементов (ограничивается позицией relative у 
+    родителя. В нашем случае .hero-block */
+    top: 0; /* Выравнивание по верху */
+    left: 0; /* Выравнивание по левому краю */
+    width: 100%; /* Ширина 100% контейнера */
+    height: 100%; /* Высота 100% контейнера */
+    object-fit: cover; /* Подгоняет изображение на всю ширину контейнера */
+}
+
+.hero-overlay {
+    background-color: black;
+    opacity: 0.6; /* Прозрачность */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply; /* Режим наложения */
+}
+
+.hero-block-container {
+    min-height: 100vh; /* Задаём минимальную высоту на размер страницы у человека на устройстве */
+    width: 100%;
+    max-width: 770px; 
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-block-inner {
+    padding: 48px 0;
+}
+
+.hero-text {
+    margin-bottom: 32px;
+    line-height: 32px; /* Высота строки*/
+    font-size: 24px; /* Размер шрифта */
+}
+
+.hero-title {
+    margin-bottom: 16px;
+    font-size: 56px;
+    line-height: 64px;
+}
+
+.hero-btn-container {
+        display: flex;
+        align-items: center; /* Центрируем по вертикали */
+        width: 100%;
+}
+
+.hero-btn {
+    padding: 20px 28px; /* Даём внутренние отступы */
+    background-color: #4B71EC;
+    border-radius: 16px; /* Закругляем углы */
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.hero-btn:hover {
+    background: #111658;
+    color: #E0E0E0;
+}
+
+@media screen and (max-width: 767px) {
+    .hero-block-inner {
+        text-align: center; /* Центрирование текста */
+    }
+
+    .hero-title {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .hero-btn-container {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}

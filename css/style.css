@@ -1,0 +1,44 @@
+/* Я разбил CSS по файлам, чтобы было проще работать */
+/* CONNECTION CSS */
+@import url(header.css); /* Добавляем файл со стилями хедера */
+@import url(footer.css); /* Добавляем файл со стилями футера */
+@import url(hero-block.css); /* Добавляем файл со стилями хиро-блока */
+@import url(fonts.css); /* Добавляем файл со стилями шрифтов */
+/* END CONNECTION CSS */
+
+* { /* Убираем всем элементам стандартный внешний отступ (к примеру такие есть у H1,h2..., body и некоторых других*/
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; /* Занимать всё пространство контейнера */
+}
+
+html { /* Даём всей странице плавную прокрутку, это необходимо чтобы при обращении через айди, прокрутка к элементу была плавной*/
+    scroll-behavior: smooth; 
+}
+
+body { /* Даём всей странице стили шрифта*/
+    font-family: FontMedium; 
+}
+
+.main-container {
+    padding: 0 64px; /* Создаём стили для "главного контейнера", в который будем оборачивать каждый дочерний элемент, чтобы везде были
+    внутренние отступы */
+}
+
+@media screen and (max-width: 1024px) {
+    .main-container {
+        padding: 0 48px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-container {
+        padding: 0 32px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-container {
+        padding: 0 16px;
+    }
+}
